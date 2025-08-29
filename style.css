@@ -8,6 +8,16 @@ header {
     height: 80px;
 }
 
+.header-left {
+    height: 80px;
+    width: 80px;
+}
+
+.header-right {
+    height: 80px;
+    width: 80px;
+}
+
 main {
     background-color: #F8F8FF;
     width: 100%;
