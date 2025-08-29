@@ -1,11 +1,15 @@
 body {
-    background-color: rgb(32,32,32);
+    background-color: #F8F8FF;
 }
 
 header {
-    background-color: rgb();
+    background-color: #28A745;
 }
 
 main {
+    background-color: #F8F8FF;
+}
 
+footer {
+    background-color: #145A32;
 }
