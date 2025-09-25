@@ -6,34 +6,523 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto - Ganhando O Mundo</title>
+    <link rel="icon" href="IMG/logo.png">
+    <title>IExchange</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
 
-        <div class="header-left">
-            <img src="IMG/logo.png">
-        </div>
-        <div class="header-center">
+        <div class="headerLeft">
 
         </div>
-        <div class="header-right">
-            <img src="IMG/hamburger_logo.png">
+
+        <div class="headerCenter">
+
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=7S96R5zh1yF3U04S">
+                <img class="headerImg" src="IMG/logo.png">
+            </a>
+
+        </div>
+
+        <div class="headerRight">
+
+            <img class="hbgMenu" src="IMG/hamburger-menu.svg" onclick="toggleMenu()">
+
         </div>
 
     </header>
 
+    <nav class="nav-menu" id="navMenu">
+        <a href="#" onclick="showSection('homeSection')">Home</a>
+        <a href="#" onclick="showSection('irelandSection')">Ireland</a>
+        <a href="#" onclick="showSection('englishSection')">English</a>
+        <a href="#" onclick="showSection('conclusionSection')">Conclusions</a>
+    </nav>
+
     <main>
+
+        <section id="homeSection">
+
+            <div class="boxIntroduction">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText" data-lang-shown="false">
+
+                    <p class="infoTitle">
+                        Introduction
+                    </p>
+
+                    <p class="infoParagraph">
+                        Hello, I am Marcus Vinicius, a second-year high school student taking a technical course in systems development. I live in Cidade Gaúcha, in the state of Paraná. Here on this website, I detail a bit of my exchange experience in Ireland.
+                    </p>
+                    <p class="pt-text">Olá, eu sou Marcus Vinicius, estudante da segunda série do ensino médio, realizando o curso técnico em desenvolvimento de sistemas. Moro em Cidade Gaúcha no estado do Paraná. Aqui neste website detalho um pouco de minha experiência de intercâmbio na Irlanda.</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        O Programa
+                    </p>
+
+                    <p class="infoParagraph">
+                        "Ganhando o Mundo is an exchange program created by the Paraná State Government and offered to students, teachers, and educators from the state public education system. The goal is to provide academic training at foreign institutions, as well as cultural and pedagogical experiences that can later be shared in Paraná’s state schools.
+                    </p>
+                    <p class="pt-text">“Ganhando o Mundo é um programa de intercâmbio criado pelo Governo do Estado do Paraná e oferecido para estudantes, professores e pedagogos da rede pública estadual de ensino. O objetivo é propiciar formação acadêmica em instituições estrangeiras, além de experiências culturais e pedagógicas que possam ser compartilhadas, posteriormente, nos colégios estaduais do Paraná.” </p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        Why Ireland?
+                    </p>
+
+                    <p class="infoParagraph">
+                        The choice of country is not solely up to the student. The student can indicate their preference for countries, from most preferred to least preferred, but it also depends on other factors, such as the student’s English proficiency level, school grades, and more. In my case, Canada was my first choice, but Ireland was a close second, and that’s where I went. I already had some knowledge about the country, such as its culture and climate, but after researching further, I found it even more fascinating. 
+                    </p>
+
+                    <p class="pt-text">A escolha do país não fica apenas a critério do estudante, o estudante até tem o direito de demonstrar sua preferência dos países, do mais preferível ao menos preferível, mas depende também de outras coisas, como o nível do inglês do estudante, notas na escola, entre outros. No meu caso o país colocado como primeiro lugar foi o Canadá, mas logo atrás a Irlanda, local aonde fui. Eu já havia alguns conhecimentos sobre o país, como a cultura e clima, mas pesquisando um pouco mais, achei ainda mais interessante. </p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="irelandSection">
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="englishSection">
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="conclusionSection">
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+            <div class="boxMain">
+
+                <div class="boxImage">
+
+                    <img class="infoImage" src="IMG/placeholder.png">
+
+                </div>
+
+                <div class="boxText">
+
+                    <p class="infoTitle">
+                        This is a title
+                    </p>
+
+                    <p class="infoParagraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
+                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
+                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        
+                    </p>
+                    <p class="pt-text">placeholder</p>
+                    <button class="toggle-lang" onclick="toggleLanguage(this)">Tradução</button>
+
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
