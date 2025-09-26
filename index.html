@@ -16,29 +16,13 @@
 
     <header id="header">
 
-        <div class="headerLeft">
-
-        </div>
-
-        <div class="headerCenter">
-
-            <a href="#">
-                <img class="headerImg" src="IMG/logo.png">
-            </a>
-
-        </div>
-
-        <div class="headerRight">
-
-            <img class="hbgMenu" src="IMG/hamburger-menu.svg" onclick="toggleMenu()">
-
-        </div>
+        <img class="headerImg" src="IMG/logo.png">
 
     </header>
 
     <nav class="nav-menu" id="navMenu">
         <a href="#" onclick="showSection('homeSection')">Home | Início</a>
-        <a href="#" onclick="showSection('irelandSection')">Ireland | Irlanda</a>
+        <a href="#" onclick="showSection('discoverySection')">Discovery | Descoberta</a>
         <a href="#" onclick="showSection('englishSection')">English | Inglês</a>
         <a href="#" onclick="showSection('conclusionSection')">Conclusion | Conclusão</a>
     </nav>
@@ -51,7 +35,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" id="introductionImage" src="IMG/Introduction.jpg">
 
                 </div>
 
@@ -64,8 +48,7 @@
                     <p class="infoParagraph">
                         Hello, I am Marcus Vinicius, a second-year high school student taking a technical course in systems development. I live in Cidade Gaúcha, in the state of Paraná. Here on this website, I detail a bit of my exchange experience in Ireland. In the website, you can read the content in english, but by clicking the "Translation | Tradução" button, you can also check out the same content in portuguese, great for learning either languages.
                     </p>
-                    <p class="pt-text">Olá, eu sou Marcus Vinicius, estudante da segunda série do ensino médio, realizando o curso técnico em desenvolvimento de sistemas. Moro em Cidade Gaúcha no estado do Paraná. Aqui neste website detalho um pouco de minha experiência de intercâmbio na Irlanda. No site, você pode ler o conteúdo em inglês, mas ao clicar no botão "Translation | Tradução", também pode conferir o mesmo conteúdo em português, ótimo para aprender qualquer um dos idiomas.</p>
-                    <button class="toggle-lang" onclick="toggleLanguage(this)">Translation | Tradução</button>
+                    <p class="pre-pt-text">Olá, eu sou Marcus Vinicius, estudante da segunda série do ensino médio, realizando o curso técnico em desenvolvimento de sistemas. Moro em Cidade Gaúcha no estado do Paraná. Aqui neste website detalho um pouco de minha experiência de intercâmbio na Irlanda. No site, você pode ler o conteúdo em inglês, mas ao clicar no botão "Translation | Tradução", também pode conferir o mesmo conteúdo em português, ótimo para aprender qualquer um dos idiomas.</p>
 
                 </div>
 
@@ -75,7 +58,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Programme.jpg">
 
                 </div>
 
@@ -86,9 +69,9 @@
                     </p>
 
                     <p class="infoParagraph">
-                        "Ganhando o Mundo is an exchange program created by the Paraná State Government and offered to students, teachers, and educators from the state public education system. The goal is to provide academic training at foreign institutions, as well as cultural and pedagogical experiences that can later be shared in Paraná’s state schools."
+                        "Ganhando o Mundo is an exchange program created by the Paraná State Government and offered to students, teachers, principals and educators from the state public education system. The goal is to provide academic training at foreign institutions, as well as cultural and pedagogical experiences that can later be shared in Paraná’s state schools."
                     </p>
-                    <p class="pt-text">“Ganhando o Mundo é um programa de intercâmbio criado pelo Governo do Estado do Paraná e oferecido para estudantes, professores e pedagogos da rede pública estadual de ensino. O objetivo é propiciar formação acadêmica em instituições estrangeiras, além de experiências culturais e pedagógicas que possam ser compartilhadas, posteriormente, nos colégios estaduais do Paraná.” </p>
+                    <p class="pt-text">“Ganhando o Mundo é um programa de intercâmbio criado pelo Governo do Estado do Paraná e oferecido para estudantes, professores, diretores e pedagogos da rede pública estadual de ensino. O objetivo é propiciar formação acadêmica em instituições estrangeiras, além de experiências culturais e pedagógicas que possam ser compartilhadas, posteriormente, nos colégios estaduais do Paraná.” </p>
                     <button class="toggle-lang" onclick="toggleLanguage(this)">Translation | Tradução</button>
 
                 </div>
@@ -98,7 +81,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Flag.png">
 
                 </div>
 
@@ -112,7 +95,7 @@
                         The choice of country is not solely up to the student. The student can indicate their preference for countries, from most preferred to least preferred, but it also depends on other factors, such as the student’s English proficiency level, school grades, and more. In my case, Canada was my first choice, but Ireland was a close second, and that’s where I went. I already had some knowledge about the country, such as its culture and climate, but after researching further, I found it even more fascinating. 
                     </p>
 
-                    <p class="pt-text">A escolha do país não fica apenas a critério do estudante, o estudante até tem o direito de demonstrar sua preferência dos países, do mais preferível ao menos preferível, mas depende também de outras coisas, como o nível do inglês do estudante, notas na escola, entre outros. No meu caso o país colocado como primeiro lugar foi o Canadá, mas logo atrás a Irlanda, local aonde fui. Eu já havia alguns conhecimentos sobre o país, como a cultura e clima, mas pesquisando um pouco mais, achei ainda mais interessante. </p>
+                    <p class="pt-text">A escolha do país não fica apenas a critério do estudante, o estudante até tem o direito de demonstrar sua preferência dos países, do mais preferível ao menos preferível, mas depende também de outras coisas, como o nível do inglês do estudante, notas na escola, entre outros. No meu caso, a princípio eu gostaria muito de ter ido para o Canadá, porém, ir para a Irlanda também foi incrível. Eu já havia alguns conhecimentos sobre o país, como a cultura e clima, mas pesquisando um pouco mais, achei ainda mais interessante. </p>
                     <button class="toggle-lang" onclick="toggleLanguage(this)">Translation | Tradução</button>
 
                 </div>
@@ -120,13 +103,13 @@
 
         </section>
 
-        <section id="irelandSection">
+        <section id="discoverySection">
 
             <div class="boxMain">
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Preparations.jpg">
 
                 </div>
 
@@ -149,7 +132,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Journey.jpg">
 
                 </div>
 
@@ -171,7 +154,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Routine.jpg">
 
                 </div>
 
@@ -197,7 +180,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Conclusion.jpg">
 
                 </div>
 
@@ -224,7 +207,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/English.jpg">
 
                 </div>
 
@@ -249,7 +232,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Tips.jpg">
 
                 </div>
 
@@ -272,7 +255,7 @@
 
                 <div class="boxImage">
 
-                    <img class="infoImage" src="IMG/placeholder.png">
+                    <img class="infoImage" src="IMG/Bridges.jpg">
 
                 </div>
 
@@ -292,15 +275,11 @@
                 </div>
             </div>
 
+        </section>
+
         <section id="conclusionSection">
 
-            <div class="boxMain">
-
-                <div class="boxImage">
-
-                    <img class="infoImage" src="IMG/placeholder.png">
-
-                </div>
+            <div class="boxIntroduction">
 
                 <div class="boxText">
 
@@ -325,38 +304,13 @@
                     <button class="toggle-lang" onclick="toggleLanguage(this)">Translation | Tradução</button>
 
                 </div>
+
             </div>
 
-            <div class="boxMain">
+            <div class="boxGallery">
 
-                <div class="boxImage">
+                <div class="titleGallery"></div>
 
-                    <img class="infoImage" src="IMG/placeholder.png">
-
-                </div>
-
-                <div class="boxText">
-
-                    <p class="infoTitle">
-                        This is a title
-                    </p>
-
-                    <p class="infoParagraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
-                        Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
-                        Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
-                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
-                        Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
-                        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-                        Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
-                        Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-                        
-                    </p>
-                    <p class="pt-text">placeholder</p>
-                    <button class="toggle-lang" onclick="toggleLanguage(this)">Translation | Tradução</button>
-
-                </div>
             </div>
 
         </section>
