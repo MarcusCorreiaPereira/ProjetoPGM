@@ -4,7 +4,7 @@ function toggleMenu() {
 }
 
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('#homeSection, #irelandSection, #englishSection, #conclusionSection');
+    const sections = document.querySelectorAll('#homeSection, #discoverySection, #englishSection, #conclusionSection');
     sections.forEach(section => section.classList.remove('active'));
     const selectedSection = document.getElementById(sectionId);
     selectedSection.classList.add('active');
